@@ -1,0 +1,262 @@
+@font-face {
+    font-family: 'Hahmlet-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+input:focus { 
+    outline: none;
+}
+input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.mypage-box{
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+.mypage-title{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Hahmlet-Regular';
+}
+.mypage-sujung-box{
+    display: flex;
+    justify-content: center;
+}
+.mypage-form{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin-right: 100px;
+}
+.mypage-form > label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'Hahmlet-Regular';
+
+}
+.mypage-form > input{
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: white;
+    margin-top: 5px;
+    padding: 5px;
+}
+.mypage-sujungbtn{
+    background-color: white;
+    border: none;
+    height: 40px;
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.mypage-sujungbtn:hover{
+    transition: 0.3s;
+    background-color: black;
+    color: white;
+}
+.mypage-id{
+    border: 1px solid rgba(255, 0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.mypage-table{
+    margin: auto;
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    
+}
+.mypage-shoptitle{
+    font-family: 'Hahmlet-Regular';
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -70px;
+}
+
+
+.mypage-title-tr > th{
+    width: 130px;
+}
+.mypage-title-th{
+    height: 50px;
+}
+.mypage-tr-map{
+    border: 1px solid black;
+}
+.mypage-tr-map > th{
+    font-weight: lighter;
+}
+.mypage-th-img{
+    width: 100px;
+}
+
+.mypage-noneOrder{
+    width: 150px;
+    height: 100px;
+    margin: auto;
+    margin-left: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mypage-review-btn{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+.mypage-apiModal{
+    /* 모달창 크기 */
+    width: 450px;
+    /* 최상단 위치 */
+    z-index: 999;
+    /* 중앙 배치 */
+    /* top, bottom, left, right 는 브라우저 기준으로 작동한다. */
+    /* translate는 본인의 크기 기준으로 작동한다. */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mypage-apiModalbod{
+    border: 2px solid rgba(0, 0, 0, 0.63);
+    /* 모달창 배경 */
+    box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px;
+}
+
+.mypage-addressbox{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    font-family: 'Hahmlet-Regular';
+    font-size: 20px;
+    font-weight: bold;
+}
+.mypage-addressForm > input{
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: white;
+    padding: 5px;
+}
+.mypage-addressContainer{
+    display: flex;
+}
+.mypage-addressNum{
+    width: 60px;
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: white;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.mypage-apibtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 20px;
+    font-size: 12px;
+    background-color: rgba(240, 248, 255, 0);
+    border: 1px solid black;
+    margin-left: 10px;
+    margin-top: 15px;
+    padding-top: 3px;
+    padding-left: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mypage-address{
+    width: 320px;
+    margin-top: 15px;
+}
+.mypage-deliverySave{
+    background-color: white;
+    border: none;
+    width: 330px;
+    height: 40px;
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.mypage-deliverySave:hover{
+    transition: 0.3s;
+    background-color: black;
+    color: white;
+}
+.mypage-api{
+    background-color: rgba(0, 0, 0, 0.438);
+    width: 100%;
+    height: 400px;
+}
+
+@media screen and (max-width: 870px) {
+    .mypage-sujung-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .mypage-form{
+        margin: auto;
+        width: 100%;
+    }
+    .mypage-form > input{
+        width: 80%;
+        margin: auto;
+    }
+    .mypage-form > label{
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .mypage-addressbox{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .mypage-addressForm{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    .mypage-address{
+        width: 100%;
+        margin: auto;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    .mypage-sujungbtn{
+        width: 60%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .mypage-deliverySave{
+        width: 75%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .mypage-addressNum{
+        width: 20%;
+        padding: 5px;
+    }
+    .mypage-addressContainer{
+        
+    }
+}

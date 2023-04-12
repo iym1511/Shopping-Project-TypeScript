@@ -1,0 +1,887 @@
+@font-face {
+  font-family: 'Hahmlet-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main-box{
+    height: 818px;
+}
+.main-imgbox{
+    display: flex;
+    background-image: url("../img/main-background.jpg");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: 300px;
+    background-attachment: fixed;
+    height: 102vh;
+
+}
+.main-backimg{
+    bottom: 220px;
+    margin-left: 200px;
+    width: 1200px;
+    height: 800px;
+}
+.main-title{
+    text-align: center;
+    padding-top: 150px;
+}
+.main-img1{
+    width: 330px;
+    height: 500px;
+    margin-top: 200px;
+    margin-right: 300px;
+    position: relative;
+    right: 400px;
+    top: 150px;
+    opacity: 0;
+    animation: appear-img1 1.25s ease-out forwards;
+    animation-delay: 0.3s;
+    /* animation: appear-img 2s 1.25s ease-out forwards; */
+    transition: 0.5s;
+}
+@keyframes appear-img1 {
+    from {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+}
+.main-img2{
+    width: 600px;
+    height: 400px;
+    margin-top: 200px;
+    margin-left: 140px;
+    opacity: 0;
+    animation: appear-img2 1.25s ease-out forwards;
+    transition: 0.5s;
+}
+@keyframes appear-img2 {
+    from {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+}
+
+.main-textbox{
+    position: relative;
+    right: 400px;
+    margin-top: 600px;
+    width: 500px;
+    animation: appear-text 1.25s ease-out forwards;
+    transition: 0.5s;
+}
+@keyframes appear-text {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+.main-text{
+  font-family: 'Hahmlet-Regular';
+    font-weight: bold;
+    width: 300px;
+    font-size: 20px;
+}
+.main-text2{
+  font-family: 'Hahmlet-Regular';
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+
+
+
+/* 메인 카운터되는 글씨효과 코드팬 */
+@keyframes can {
+    0% {
+      transform: translateY(0);
+    }
+    26.6666666667% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    33.3333333333% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    33.3343333333% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    33.3363333333% {
+      transform: translateY(100%);
+      opacity: 1;
+    }
+    93.3333333333% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes will {
+    0% {
+      transform: translateY(0);
+    }
+    26.6666666667% {
+      transform: translateY(0);
+    }
+    33.3333333333% {
+      transform: translateY(-100%);
+    }
+    60% {
+      transform: translateY(-100%);
+      opacity: 1;
+    }
+    66.6666666667% {
+      transform: translateY(-200%);
+      opacity: 0;
+    }
+    66.6676666667% {
+      transform: translateY(0);
+    }
+    66.6696666667% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes thrive {
+    0% {
+      transform: translateY(-300%);
+    }
+    0.0001% {
+      transform: translateY(0);
+    }
+    26.6666666667% {
+      transform: translateY(0);
+    }
+    33.3333333333% {
+      transform: translateY(-100%);
+    }
+    60% {
+      transform: translateY(-100%);
+    }
+    66.6666666667% {
+      transform: translateY(-200%);
+    }
+    93.3333333333% {
+      transform: translateY(-200%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-300%);
+      opacity: 0;
+    }
+  }
+  .word {
+    display: flex;
+    grid-column: 2;
+    grid-row: auto;
+    color: rgb(116, 116, 116);
+  }
+  .word span {
+    display: inline-block;
+  }
+  .can span:nth-child(1) {
+    animation: can 6s ease-in-out both 0.05s infinite;
+  }
+  
+  .will span:nth-child(1) {
+    animation: will 6s ease-in-out both 0.05s infinite;
+  }
+  
+  .thrive span:nth-child(1) {
+    animation: thrive 6s ease-in-out both 0.05s infinite;
+  }
+  
+  .can span:nth-child(2) {
+    animation: can 6s ease-in-out both 0.1s infinite;
+  }
+  
+  .will span:nth-child(2) {
+    animation: will 6s ease-in-out both 0.1s infinite;
+  }
+  
+  .thrive span:nth-child(2) {
+    animation: thrive 6s ease-in-out both 0.1s infinite;
+  }
+  
+  .can span:nth-child(3) {
+    animation: can 6s ease-in-out both 0.15s infinite;
+  }
+  
+  .will span:nth-child(3) {
+    animation: will 6s ease-in-out both 0.15s infinite;
+  }
+  
+  .thrive span:nth-child(3) {
+    animation: thrive 6s ease-in-out both 0.15s infinite;
+  }
+  
+  .can span:nth-child(4) {
+    animation: can 6s ease-in-out both 0.2s infinite;
+  }
+  
+  .will span:nth-child(4) {
+    animation: will 6s ease-in-out both 0.2s infinite;
+  }
+  
+  .thrive span:nth-child(4) {
+    animation: thrive 6s ease-in-out both 0.2s infinite;
+  }
+  
+  .can span:nth-child(5) {
+    animation: can 6s ease-in-out both 0.25s infinite;
+  }
+  
+  .will span:nth-child(5) {
+    animation: will 6s ease-in-out both 0.25s infinite;
+  }
+  
+  .thrive span:nth-child(5) {
+    animation: thrive 6s ease-in-out both 0.25s infinite;
+  }
+  
+  .can span:nth-child(6) {
+    animation: can 6s ease-in-out both 0.3s infinite;
+  }
+  
+  .will span:nth-child(6) {
+    animation: will 6s ease-in-out both 0.3s infinite;
+  }
+  
+  .thrive span:nth-child(6) {
+    animation: thrive 6s ease-in-out both 0.3s infinite;
+  }
+  
+  .main-togrther-title {
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: auto;
+    overflow: hidden;
+    max-height: 6vw;
+  }
+  
+  .main-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 90px;
+    height: 810px;
+    bottom:0px;
+    right: 1800px;
+    width: 1400px;
+  }
+
+
+  /* For styling the demo. Not required. */
+ 
+  .main-togrther-title {
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 6vw;
+    letter-spacing: 3px;
+    height: 250px;
+    position: relative;
+    right: 650px;
+    margin-top: 720px;
+    width: 900px;
+  }
+
+
+/* 메인 Tommorow 글씨효과 코드팬 */
+.main-container {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 600px;
+    position: relative;
+    right: 1050px;
+    margin-top: 100px;
+    transition: 0.5s;
+  }
+  
+
+  
+  .animation {
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: #fff;
+    display: inline-block;
+    animation: fadeIn 1.5s forwards;
+    opacity: 0;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  
+  .main-first {
+    color: rgb(14, 14, 14);
+    display: inline-block;
+    animation: firstSpan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    z-index: 1;
+  }
+  
+  .main-two {
+    color: #ffc400;
+    display: inline-flex;
+    overflow: hidden;
+  }
+  
+  .main-second {
+    animation: secondSpan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    font-weight: 100;
+    z-index: -1;
+    display: inline-block;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(1);
+    } 
+    50% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes firstSpan {
+    0% {
+      transform: translateX(35%);
+    }
+    60% {
+      transform: translateX(35%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  @keyframes secondSpan {
+    0% {
+      transform: translateX(-100%);
+    }
+    60% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(-0%);
+    }
+  }
+  
+  
+  /* Linkedin href */
+  .main-insta{
+    font-size: 2.5em;
+    color: rgb(70, 70, 70);
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: 35px;
+  }
+  .main-insta:hover{
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+  }
+  .main-twitter{
+    font-size: 2.5em;
+    color: rgb(70, 70, 70);
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  .main-twitter:hover{
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+  }
+  .main-youtube{
+    font-size: 2.5em;
+    color: rgb(70, 70, 70);
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  .main-youtube:hover{
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+  }
+  .main-github{
+    font-size: 2.5em;
+    color: rgb(70, 70, 70);
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  .main-github:hover{
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+  }
+
+  .main-link {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    transition: 0.2s;
+    animation: slideLeft 1.5s forwards;
+    z-index: 10;
+    color: black;
+    /* background-color: #ffffff; */
+    width: 300px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  /* .main-link > svg{
+    font-size: 3em;
+    color: rgb(70, 70, 70);
+    transition: 0.3s;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .main-link > svg:hover{
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+    cursor: pointer;
+  } */
+  
+  .main-link:after {
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    margin-bottom: -5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #5d5d5d;
+    transition: 0.2s;
+  }
+  
+  .main-link:hover {
+      opacity: 0.8;
+  }    
+  .main-link:hover::after {
+    width: 100%; 
+  }
+  
+  @keyframes slideLeft {
+    from {
+      opacity: 0;
+      /* -로 바꾸면 오른쪽에서 나옴 */
+      transform: translateX(200px);
+    } 
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+  
+/* 메인 글씨효과 Hello 코드팬 */
+
+.hello-parent {
+    height: 50%;
+    width: 400px;
+    margin: 0;
+  }
+  
+  .hello-parent {
+    display: flex;
+    margin-top: 170px;
+    margin-left: 150px
+  }
+  
+
+  /* H Animation */
+  
+  .H-left-stroke {
+    stroke-dasharray: 124px;
+    stroke-dashoffset: 124px;
+    animation: H-left-move 20s ease forwards;
+  }
+  
+  .H-mid-stroke {
+    stroke-dasharray: 37px;
+    stroke-dashoffset: 37px;
+    animation: H-mid-move 9s ease forwards;
+  }
+  
+  .H-right-stroke {
+    stroke-dasharray: 124px;
+    stroke-dashoffset: 124px;
+    animation: H-right-move 13s ease forwards;
+  }
+  
+  @keyframes H-left-move {
+    0% {
+      stroke-dashoffset: 124px;
+    }
+    5% {
+      stroke-dashoffset: 0px;
+    }
+    100% {
+      stroke-dashoffset: 0px;
+    }
+  }
+  
+  @keyframes H-mid-move {
+    0% {
+      stroke-dashoffset: 37px;
+    }
+    5% {
+      stroke-dashoffset: 37px;
+    }
+    10% {
+      stroke-dashoffset: 0px;
+    }
+    100% {
+      stroke-dashoffset: 0px;
+    }
+  }
+  
+  @keyframes H-right-move {
+    0% {
+      stroke-dashoffset: 124px;
+    }
+    5% {
+      stroke-dashoffset: 124px;
+    }
+    10% {
+      stroke-dashoffset: 0px;
+    }
+    100% {
+      stroke-dashoffset: 0px;
+    }
+  }
+  
+  /* E Animation */
+  
+  .E-left-stroke {
+    stroke-dasharray: 124px;
+    stroke-dashoffset: 124px;
+    animation: E-left-move 20s ease forwards;
+  }
+  
+  .E-top-stroke {
+    stroke-dasharray: 47px;
+    stroke-dashoffset: 47px;
+    animation: E-top-move 10s ease forwards;
+  }
+  
+  .E-mid-stroke {
+    stroke-dasharray: 42px;
+    stroke-dashoffset: 42px;
+    animation: E-mid-move 10s ease forwards;
+  }
+  
+  .E-bottom-stroke {
+    stroke-dasharray: 47px;
+    stroke-dashoffset: 47px;
+    animation: E-bottom-move 10s ease forwards;
+  }
+  
+  @keyframes E-left-move {
+    0% {
+      stroke-dashoffset: 124px;
+    }
+    2% {
+      stroke-dashoffset: 124px;
+    }
+    6% {
+      stroke-dashoffset: 0px;
+    }
+    100% {
+      stroke-dashoffset: 0px;
+    }
+  }
+  
+  @keyframes E-top-move {
+    0% {
+      stroke-dashoffset: 47px;
+    }
+    6% {
+      stroke-dashoffset: 47px;
+    }
+    11% {
+      stroke-dashoffset: 0px;
+    }
+    100% {
+      stroke-dashoffset: 0px;
+    }
+  }
+  
+  @keyframes E-mid-move {
+    0% {
+      stroke-dashoffset: 42px;
+    }
+    8% {
+      stroke-dashoffset: 42px;
+    }
+    13% {
+      stroke-dashoffset: 0px;
+    }
+    100% {
+      stroke-dashoffset: 0px;
+    }
+  }
+  
+  @keyframes E-bottom-move {
+    0% {
+      stroke-dashoffset: 47px;
+    }
+    11% {
+      stroke-dashoffset: 47px;
+    }
+    16% {
+      stroke-dashoffset: 0px;
+    }
+    100% {
+      stroke-dashoffset: 0px;
+    }
+  }
+  
+  /* L One Animation */
+  
+  .L-one-long-stroke {
+    stroke-dasharray: 124px;
+    stroke-dashoffset: 124px;
+    animation: L-one-long-move 20s ease forwards;
+  }
+  
+  .L-one-short-stroke {
+    stroke-dasharray: 44px;
+    stroke-dashoffset: 44px;
+    animation: L-one-short-move 10s ease forwards;
+  }
+  
+  @keyframes L-one-long-move {
+    0% {
+      stroke-dashoffset: 124px;
+    }
+    2% {
+      stroke-dashoffset: 124px;
+    }
+    7% {
+      stroke-dashoffset: 0px;
+    }
+    100% {
+      stroke-dashoffset: 0px;
+    }
+  }
+  
+  @keyframes L-one-short-move {
+    0% {
+      stroke-dashoffset: 44px;
+    }
+    13% {
+      stroke-dashoffset: 44px;
+    }
+    18% {
+      stroke-dashoffset: 0px;
+    }
+    100% {
+      stroke-dashoffset: 0px;
+    }
+  }
+  
+  /* L Two Animation */
+  
+  .L-two-long-stroke {
+    stroke-dasharray: 124px;
+    stroke-dashoffset: 124px;
+    animation: L-two-long-move 20s ease forwards;
+  }
+  
+  .L-two-short-stroke {
+    stroke-dasharray: 44px;
+    stroke-dashoffset: 44px;
+    animation: L-two-short-move 10s ease forwards;
+  }
+  
+  @keyframes L-two-long-move {
+    0% {
+      stroke-dashoffset: 124px;
+    }
+    3% {
+      stroke-dashoffset: 124px;
+    }
+    8% {
+      stroke-dashoffset: 0px;
+    }
+    100% {
+      stroke-dashoffset: 0px;
+    }
+  }
+  
+  @keyframes L-two-short-move {
+    0% {
+      stroke-dashoffset: 44px;
+    }
+    15% {
+      stroke-dashoffset: 44px;
+    }
+    20% {
+      stroke-dashoffset: 0px;
+    }
+    100% {
+      stroke-dashoffset: 0px;
+    }
+  }
+  
+  /* O Animation */
+  
+  .O-stroke {
+    stroke-dasharray: 302px;
+    stroke-dashoffset: 302px;
+    animation: O-move 20s ease forwards;
+  }
+  
+  @keyframes O-move {
+    0% {
+      stroke-dashoffset: 302px;
+    }
+    4% {
+      stroke-dashoffset: 302px;
+    }
+    9% {
+      stroke-dashoffset: 0px;
+    }
+    100% {
+      stroke-dashoffset: 0px;
+    }
+  }
+  
+  /* Red Dot Animation */
+  
+  .red-dot {
+    stroke-width: 44px;
+    stroke-linecap: round;
+    animation: red-dot-grow 8s ease-out forwards;
+  }
+  
+  @keyframes red-dot-grow {
+    0% {
+      stroke-width: 0px;
+    }
+    15% {
+      stroke-width: 0px;
+    }
+    20% {
+      stroke-width: 44px;
+    }
+    100% {
+      stroke-width: 44px;
+    }
+  }
+
+/* 반응형 */
+  @media screen and (max-width: 1500px){
+    .main-img1{
+      width: 330px;
+      height: 400px;
+      margin-top: 180px;
+      margin-right: 300px;
+      position: relative;
+      /* left: -30%; */
+      /* right: 400px; */
+      top: 150px;
+      opacity: 0;
+      animation: appear-img1 1.25s ease-out forwards;
+      animation-delay: 0.3s;
+      /* animation: appear-img 2s 1.25s ease-out forwards; */
+      transition: 0.5s;
+  }
+  @keyframes appear-img1 {
+      from {
+        opacity: 0;
+        transform: scale(0.3);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+  }
+  .main-img2{
+      width: 500px;
+      height: 300px;
+      margin-top: 200px;
+      margin-left:10%;
+      opacity: 0;
+      animation: appear-img2 1.25s ease-out forwards;
+      transition: 0.5s;
+  }
+  @keyframes appear-img2 {
+      from {
+        opacity: 0;
+        transform: scale(0.3);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+  }
+      /* 메인 Tommorow 글씨효과 코드팬 */
+    .main-container {
+      display: flex;
+      justify-content: center;
+      height: 200px;
+      width: 600px;
+      position: relative;
+      /* right: 900px; */
+      margin-top: 100px;
+      transition: 0.5s;
+    }
+
+    .main-textbox{
+      position: relative;
+      right: 400px;
+      margin-top: 500px;
+      width: 500px;
+      animation: appear-text 1.25s ease-out forwards;
+      transition: 0.5s;
+  }
+  @keyframes appear-text {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+  }
+  .main-text{
+    font-family: 'Hahmlet-Regular';
+      font-weight: bold;
+      width: 300px;
+      font-size: 17px;
+  }
+  .main-text2{
+    font-family: 'Hahmlet-Regular';
+      font-size: 12px;
+      margin-top: -10px;
+  }
+  }

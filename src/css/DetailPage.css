@@ -1,0 +1,521 @@
+@font-face {
+    font-family: 'Hahmlet-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.detail-box{
+    border: 1px solid rgba(0, 0, 0, 0);
+    width: 99.9%;
+}
+.detail-item{
+    margin-top: 150px;
+    width: 100%;
+}
+.detail-img{
+    width: 580px;
+    margin-left: 84px;
+    margin-bottom: 50px;
+}
+.detail-img2{
+    width: 750px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.detail-textbox{
+    margin: auto;
+    width: 300px;
+    margin-left: 190px;
+    height: 520px;
+    margin-top: 25px;
+}
+.detail-fixbox{
+    position: fixed;
+}
+
+.detail-text{
+    width: 200px;
+}
+.detail-text2{
+    display: none;
+}
+.detail-count-box{
+    display: flex;
+    border: 1px solid rgb(171, 171, 171);
+    width: 70px;
+    padding-top: 3px;
+}
+
+.detail-count-box > button {
+    background-color: white;
+    border: none;
+    width: 50px;
+    color: rgb(70, 70, 70);
+    cursor: pointer;
+}
+
+.detail-money{
+    width: 300px;
+}
+.detail-money > span{
+    font-size: 13px;
+    color: rgb(192, 192, 192);
+}
+.detail-money > span:nth-child(1){
+    color: gray;
+    font-size: 15px;
+}
+.detail-cartbtn{
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 10px;
+    width: 220px;
+    transition: all 0.2s linear 0s;
+}
+.detail-cartbtn:before {
+    content: "\27F6";
+    font-size: 15px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 160px;
+    bottom: -180px;
+    top: 111px;
+    opacity: 0;
+    height: 60px;
+    width: 40px;
+    color: rgb(255, 255, 255);
+    transition: all 0.2s linear 0s;
+  }
+  .detail-cartbtn:hover {
+    text-indent: -20px;
+    background-color: black;
+    color: white;
+  }
+  .detail-cartbtn:hover:before {
+    opacity: 1;
+    text-indent: 0px;
+  }
+  .detail-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30px;
+    }
+    .detail-info > span {
+        color: red;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        border-top: 1.5px solid rgba(0, 0, 0, 0.417);
+        width: 220px;
+    }
+    .detail-info > p{
+        margin-top: 0px;
+        font-size: 13px;
+    }
+
+.detail-btn{
+    margin: auto;
+    margin-top: 100px;
+    width: 70px;
+    height: 37px;
+    margin-left: 10px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.detail-btn:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.detail-container{
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+.detail-imgbox{
+    width: 500px;
+    margin: auto;
+}
+.detail-reviewBox{
+    height: 380px;
+}
+
+.detail-mapbox{
+    /* width: 42%;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 100px;
+    padding-bottom: 10px; */
+    width: 38%;
+    height: 100px;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 15.4%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+.detail-reviewbox{
+    /* display: flex;
+    width: 100%;
+    border-bottom: 1px solid gray; */
+}
+.detail-userbox{
+    width: 200px;
+}
+.detail-rate{
+    margin-left: 8px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    width: 100px;
+}
+.detail-reviewName{
+    margin-left: 10px;
+    margin-top: 7px;
+    color: gray;
+    width: 110px;
+}
+.detail-reviewDate{
+    margin-left: 10px;
+    font-size: 12px;
+    margin-top: 7px;
+    color: gray;
+}
+.detail-reviewText{
+    width: 100%;
+    margin-left: 30px;
+    margin-top: 15px;
+    color: rgb(49, 49, 49);
+}
+.detail-reviewBtn{
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+    cursor: pointer;
+}
+.detail-noneReview{
+    width: 38%;
+    height: 100px;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 15.4%;
+    padding-bottom: 10px;
+    border-top: 1px solid rgb(207, 207, 207);
+}
+.detail-noneReview > p{
+    margin: auto;
+    color: gray;
+}
+.detail-QnAcontainer{
+    margin: auto;
+    /* width: 38%; */
+    width: 50%;
+    margin-top: 200px;
+    /* margin-left: 15.4%; */
+    margin-left: 10%;
+    margin-bottom: 100px;
+}
+.detail-QnAtitle{
+    font-family: 'Hahmlet-Regular';
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid gray;
+    padding-top: 50px;
+    font-weight: lighter;
+}
+.detail-flexbox{
+    display: flex;
+    width: 100%;
+}
+.text{
+    margin: auto;
+}
+.map-box{
+    width: 80%;
+    margin: auto;
+}
+.detail-form{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.detail-formDiv{
+    margin: auto;
+    padding-left: 30%;
+    width: 80%;
+    /* border: 1px solid red; */
+}
+.detail-input{
+    margin-top: 100px;
+    width: 40%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.inputbox{
+    display: flex;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    margin: auto;
+    padding-left: 30px;
+    margin-top: 45px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.detail-QnA-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.detail-QnA-box{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+.detail-name{
+    /* width: 90px; */
+}
+.detail-date{
+    color: gray;
+    font-size: 13px;
+    margin-top: -15px;
+}
+.detail-QnA-textbox{
+    /* border: 1px solid red; */
+}
+
+.inputtext{
+    width: 100%;
+    display: flex;
+}
+.detail-noneQnA{
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    color: gray;
+}
+
+.xbtn{
+    margin: auto;
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.detail-outlet{
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+}
+.detail-navbox{
+    display: flex;
+    justify-content: center;
+    
+}
+.detail-nav1{
+    cursor: pointer;
+    border: 1px solid black;
+    width: 200px;
+    height: 50px;
+}
+.detail-nav2{
+    cursor: pointer;
+    border: 1px solid black;
+    width: 200px;
+    height: 50px;
+}
+
+
+/* 반응형 */
+@media screen and (max-width: 570px) {
+    .detail-text2{
+        width: 200px;
+        height: 45px;
+        padding-left: 8px;
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+    }
+    .detail-text{
+        display: none;
+    }
+}   
+@media screen and (max-width: 965px) {
+    .detail-mapbox{
+        width:60%;
+    }
+}
+@media screen and (max-width: 1240px) {
+    .detail-mapbox{
+        width:80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .detail-text{
+        width: 200px;
+        height: 45px;
+        padding-left: 8px;
+        margin-top: 0;
+        padding-top: 15px;
+        text-align: center;
+        font-size: 13px;
+    }
+    .detail-textbox{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 100%;
+        height: 45px;
+        z-index: 500;
+    }
+    .detail-fixbox{
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+        width: 100% !important;
+        height: 45px;
+        margin: auto;
+        /* margin-top: 900px !important; */
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border-top: 1px solid white;
+    }
+    .detail-count-box > button {
+        height: 45px;
+        background-color: rgba(240, 248, 255, 0);
+        color: white;
+        font-size: 20px;
+        margin-top: -3px;
+    }
+    .detail-count-box {
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        font-size: 10px;
+
+    }
+    .detail-count{
+        font-size: 17px;
+    }
+    .detail-cartbtn{
+        width: 120px;
+        height:45px;
+        border: none;
+        background-color: black;
+        color: white;
+        font-size: 13px;
+        transition: none;
+    }  
+    .detail-money{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+        margin-top: 0;
+        margin: auto;
+        letter-spacing: 1px;
+        white-space: nowrap;
+    }
+    .detail-money > span{
+        font-size: 12px;
+        color: rgb(173, 173, 173);
+    }
+    .detail-money > span:nth-child(1){
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+    }
+    
+    .detail-item{
+        margin-top: 150px;
+        width: 62%;
+    }
+    .detail-img{
+        width: 160%;
+        margin-left: 30%;
+        margin-bottom: 50px;
+        /* border: 1px solid red; */
+    }
+    .detail-img2{
+        width: 220%;
+        margin-bottom: 50px;
+        /* border: 1px solid red; */
+    }
+    .detail-imgbox{
+        width: 50%;
+        margin: auto;
+        /* border: 1px solid red; */
+    }
+    .detail-noneReview{
+        width:80%;
+        margin: auto;
+    }
+    .detail-cartbtn:before {
+        content: "";
+        font-size: 15px;
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 0px;
+        bottom: 0px;
+        top: 0;
+        transition: none;
+      }
+      .detail-cartbtn:hover {
+        text-indent: 0px;
+      }
+      .detail-cartbtn:hover:before {
+        opacity: 0;
+        text-indent: 0px;
+      }
+      .detail-info{
+        display: none;
+      }
+
+    .detail-form{
+        display: flex;
+    }
+    .detail-btn{
+        margin-top: 100px;
+        width: 70px;
+        background-color: white;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+    .detail-QnAcontainer{
+        margin: auto;
+        width: 70%;
+        margin-top: 200px;
+        margin-bottom: 100px;
+    }
+    .detail-noneQnA{
+        margin: auto;
+        width: 70%;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .detail-formDiv{
+        margin: auto;
+        padding-left: 30%;
+        width: 80%;
+    }
+}

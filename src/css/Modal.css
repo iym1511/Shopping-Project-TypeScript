@@ -1,0 +1,62 @@
+.modal-box{
+    /* 모달창 크기 */
+  width: 400px;
+  height: 200px;
+  /* 최상단 위치 */
+  z-index: 999;
+  
+  /* 중앙 배치 */
+  /* top, bottom, left, right 는 브라우저 기준으로 작동한다. */
+  /* translate는 본인의 크기 기준으로 작동한다. */
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+
+  /* 모달창 디자인 */
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+}
+
+.modal-container{
+
+}
+.modal-container > p{
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.modal-buttons{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 40px;
+}
+.modal-button1 {
+  width: 170px;
+  height: 40px;
+  border: 1px solid gray;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.modal-button2 {
+  width: 170px;
+  height: 40px;
+  border: 1px solid gray;
+  background-color: rgb(21, 21, 21);
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1240px) {
+  .modal-box{
+    left: 30%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .modal-box{
+    left: 10%;
+  }
+}

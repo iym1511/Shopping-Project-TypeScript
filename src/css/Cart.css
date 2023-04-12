@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Hahmlet-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cart-box{
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+.cart-title{
+    text-align: center;
+    font-family: 'Hahmlet-Regular';
+    margin-top: 150px;
+}
+.cart-pickdelete{
+    margin-left: 140px;
+    border: 1px solid gray;
+    background-color: white;
+    cursor: pointer;
+}
+.cart-allpick{
+    border: 1px solid gray;
+    background-color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.cart-list{
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.cart-listbox{
+    display: flex;
+    justify-content: flex-start;
+    border-top: 1px solid rgba(0, 0, 0, 0.445);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.445);
+    margin-top: 10px;
+    padding-bottom: 15px;
+    margin-left: 140px;
+    margin-right: 140px;
+    height: 40px;
+}
+tr{
+    margin-top: 15px;
+}
+td{
+    display: flex;
+    align-items: center;
+    height: 120px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.cart-trcheck{
+    width: 30px;
+}
+.cart-allcheck{
+    border: none;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+.cart-trimg{
+    position: absolute;
+    margin-left: 50px;
+}
+.cart-trmulgun{
+    width: 840px;
+    margin-left: 85px;
+    text-align: center;
+}
+.cart-trcount{
+    position: relative;
+    left: -14px;
+    width: 100px;
+}
+.cart-trmoney{
+    position: relative;
+    left: 30px;
+    width: 210px;
+}
+.cart-trdelivery{
+    position: relative;
+    left: 20px;
+    width: 160px;
+}
+.cart-trdeliverymoney{
+    width: 240px;
+    position: relative;
+    left: 25px;
+}
+.cart-trpick{
+    width: 190px;
+    text-align: center
+}
+
+
+
+/* 여기 width주면 고정됨 넓이 반응형할때 그냥 고정시켜버리자*/
+.cart-Cartbox{
+    display: flex;
+    justify-content:flex-start;
+    border-top: 1px solid rgba(0, 0, 0, 0.445);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.445);
+    margin-top: 10px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+
+.cart-checkbox{
+    vertical-align: middle;
+    word-break: break-all;
+    word-wrap: break-word;
+    margin-right: 30px;
+}
+.cart-image{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.cart-tdimg{
+    border: 1px solid red;
+    width: 300px;
+
+}
+
+.cart-name{
+    width: 1700px;
+    margin-left: 10px;
+}
+.cart-countbox{
+    width: 350px;
+    margin-right: 10px;
+}
+.cart-count{
+    display: flex;
+    border: 0.5px solid rgba(0, 0, 0, 0.445);
+    height: 30px;
+}
+.cart-countnum{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    width: 10px;
+}
+.Cartbtn1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.445);
+    cursor: pointer;
+}
+.Cartbtn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.445);
+    cursor: pointer;
+}
+.Cartbtn3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+    width: 400px;
+}
+.cart-savemoney{
+    width: 450px;
+}
+.cart-delivery{
+    width: 350px;
+   
+}
+.cart-money{
+    width: 500px;
+}
+.Cart-zero{
+    margin: auto;
+    margin-top: 100px;
+    padding-bottom: 90px;
+    text-align: center;
+}
+.cart-moneysum{
+    text-align: center;
+    width: 85.3%;
+    margin: auto;
+    height: 4.5vh;
+    font-size: 20px;
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: 3px solid rgba(0, 0, 0, 0.445);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.445);
+}
+.cart-order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.811);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.cart-order-none{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    background-color: rgba(94, 93, 93, 0.811);
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+/* 반응형 */
+@media screen and (max-width: 1090px) {
+    .cart-Cartbox{
+        width: 807px;
+    }
+    .cart-listbox{
+        width: 807px;
+    }
+    .cart-title{
+        width: 400px;
+        margin-left: 340px;
+    }
+    .cart-moneysum{
+        width: 921px;
+        margin-left: 80px;
+    }
+    .cart-order{
+        margin-left: 490px;
+    }
+    .cart-order-none{
+        margin-left: 490px;
+    }
+
+    .Cart-zero{
+        width: 400px;
+        margin-left: 340px;
+    }
+}

@@ -1,0 +1,11 @@
+.Notfound-container{
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.Notfound-title{
+    text-align: center;
+    border: 1px black;
+    margin-top: 340px;
+    font-size: 100px;
+    font-weight: bolder;
+}

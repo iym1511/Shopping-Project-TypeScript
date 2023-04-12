@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Hahmlet-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.shoes-box{
+    border: 1px solid rgba(196, 3, 255, 0);
+    width: 90%;
+    margin: auto;
+}
+
+.shoes-title{
+    margin-top: 150px;
+    margin-left: 40px;
+    font-family: 'Hahmlet-Regular';
+    font-size: 2vw;
+    border-top: 1px solid black;
+    padding-top: 20px;
+    width: 95%;
+}
+
+
